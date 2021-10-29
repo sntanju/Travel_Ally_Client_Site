@@ -1,1 +1,65 @@
-[{"id":1,"img":"https://www.covermore.com.au/sites/default/files/temple_in_indonesia.jpg","name":"Bally, Indonesia","price":50},{"id":2,"img":"https://www.thetopvillas.com/blog/wp-content/uploads/2015/12/shutterstock_206500615.jpg","name":"Miami Beach, USA","price":78},{"id":3,"img":"https://rccl-h.assetsadobe.com/is/image/content/dam/royal/data/ports/venice-italy/overview/venice-italy-grand-canal.jpg?$1024x700$","name":"Vanice, Italy","price":57},{"id":4,"img":"https://www.gia.edu/images/FA19-Dirlam-Fig01-246456-468px.jpg","name":"Tajmahal, India","price":64},{"id":5,"img":"https://cdn.britannica.com/54/122154-050-4DA0F697/Great-Wall-of-China.jpg","name":"Great Wall, China","price":72},{"id":6,"img":"https://static.educalingo.com/img/ms/800/piramid.jpg","name":"Piramid, Egypt","price":88},{"id":7,"img":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0M6Dm6Tz4smr6sySQQP8kMrP_w_O10DModA&usqp=CAU","name":"Darjeeling, India","price":97},{"id":8,"img":"https://www.ceylonexpeditions.com/medias/media/big/528/sri-pada-adam-s-peak-sri-lanka-1.jpg","name":"Adam's Peak, Srilanka","price":53},{"id":9,"img":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBCT22XNGE9ifaqLU4sBZmE78LlmO0e9uhspYVVaS4N2lfOnQeoY17DYWpER3Gs8X58O4&usqp=CAU","name":"Kashmir, India","price":93}]
+[
+        {
+            "id":1,
+            "img":"https://www.covermore.com.au/sites/default/files/temple_in_indonesia.jpg",
+            "name":"Bally, Indonesia",
+            "description":"Bali is a province of Indonesia and the westernmost of the Lesser Sunda Islands. East of Java and west of Lombok, the province includes the island of Bali ",
+            "price":50
+        },
+        {
+            "id":2,
+            "img":"https://www.thetopvillas.com/blog/wp-content/uploads/2015/12/shutterstock_206500615.jpg",
+            "name":"Miami Beach, USA",
+            "description":"Miami Beach is a south Florida island city, connected by bridges to mainland Miami. Wide beaches stretch from North Shore Open Space Park,",
+            "price":78
+        },
+        {
+            "id":3,
+            "img":"https://rccl-h.assetsadobe.com/is/image/content/dam/royal/data/ports/venice-italy/overview/venice-italy-grand-canal.jpg?$1024x700$",
+            "name":"Vanice, Italy",
+            "description":"Venice, the capital of northern Italy’s Veneto region, is built on more than 100 small islands in a lagoon in the Adriatic Sea. It has no roads,",
+            "price":57
+        },
+        {
+            "id":4,
+            "img":"https://www.gia.edu/images/FA19-Dirlam-Fig01-246456-468px.jpg",
+            "name":"Tajmahal, India",
+            "description":"The Taj Mahal, is an ivory-white marble mausoleum on the right bank of the river Yamuna in the Indian city of Agra. It was commissioned in 1632 ",
+            "price":64
+        },
+        {
+            "id":5,
+            "img":"https://cdn.britannica.com/54/122154-050-4DA0F697/Great-Wall-of-China.jpg",
+            "name":"Great Wall, China",
+            "description":"The Great Wall of China is a series of fortifications that were built across the historical northern borders of ancient Chinese states and ",
+            "price":72
+        },
+        {
+            "id":6,
+            "img":"https://static.educalingo.com/img/ms/800/piramid.jpg",
+            "name":"Piramid, Egypt",
+            "description":"The most famous Egyptian pyramids are those found at Giza, on the outskirts of Cairo. Several of the Giza pyramids are counted among",
+            "price":88
+        },
+        {
+            "id":7,
+            "img":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0M6Dm6Tz4smr6sySQQP8kMrP_w_O10DModA&usqp=CAU",
+            "name":"Darjeeling, India",
+            "description":"Darjeeling is a town in India's West Bengal state, in the Himalayan foothills. Once a summer resort for the British Raj elite, it remains the ",
+            "price":97
+        },
+        {
+            "id":8,
+            "img":"https://www.ceylonexpeditions.com/medias/media/big/528/sri-pada-adam-s-peak-sri-lanka-1.jpg",
+            "name":"Adam's Peak, Srilanka",
+            "description":"Adam's Peak is a 2,243 m tall conical mountain located in central Sri Lanka. It is well known for the Sri Pada, i.e., sacred footprint, ",
+            "price":53
+        },
+        {
+            "id":9,
+            "img":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBCT22XNGE9ifaqLU4sBZmE78LlmO0e9uhspYVVaS4N2lfOnQeoY17DYWpER3Gs8X58O4&usqp=CAU",
+            "name":"Kashmir, India",
+            "description":"Jammu and Kashmir was a region formerly administered by India as a state from 1954 to 2019, constituting the southern and",
+            "price":93
+        }
+]

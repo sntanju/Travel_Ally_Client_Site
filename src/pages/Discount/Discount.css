@@ -1,0 +1,21 @@
+.discount {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    border: 1px solid white;
+    margin: 30px;
+    border-radius: 10px;
+    background-color: rgba(64, 224, 208, 0.404);
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.596);
+}
+.discount img {
+    margin: 0px;
+    width: 700px;
+    height: 400px;
+}
+.discount-text {
+    margin-top: 50px;
+    color: green;
+}
+.discount-text span{
+    color: red;
+}

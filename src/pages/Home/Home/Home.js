@@ -1,4 +1,6 @@
 import React from 'react';
+import Discount from '../../Discount/Discount';
+import TravelAdvanture from '../../TravelAdventure/TravelAdvanture';
 import Footer from '../Footer/Footer';
 import Header from '../Header/Header';
 import Navbar from '../Navbar/Navbar';
@@ -10,7 +12,8 @@ const Home = () => {
             
             <Header></Header>
             <Services></Services>
-            
+            <Discount></Discount>
+            <TravelAdvanture></TravelAdvanture>
         </div>
     );
 };
