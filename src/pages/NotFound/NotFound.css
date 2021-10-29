@@ -1,0 +1,12 @@
+.not-found {
+    color: tomato;
+    margin-top: 150px;
+    margin-bottom: 150px;
+}
+.not-found button {
+    background-color: green;
+    color: white;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 8px;
+}

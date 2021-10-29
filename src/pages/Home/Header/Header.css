@@ -1,0 +1,13 @@
+.header {
+    background-image: url('https://therajholidays.com/wp-content/uploads/2020/11/kasmir-tourism-places_4935633-m.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 500px;
+    
+}
+.header h1 {
+    background-color: rgb(85, 201, 247);
+    color: yellow;
+    margin: 0px;
+    padding: 15px;
+}
