@@ -49,8 +49,8 @@ const Footer = () => {
                     <br />
                     <h3>Contact</h3>
                     <hr />
-                    <p>{cellIcon}  Cell: +136038984756</p>
-                    <p>{emailIcon}  Mail: ptc@xyz.com</p>  
+                    <p>{cellIcon}  Cell: +543857935</p>
+                    <p>{emailIcon}  Mail: TAlly@abc.com</p>  
                 </div>
 
                 <div>

@@ -1,0 +1,19 @@
+.aboutus {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: start;
+}
+.aboutus img {
+    padding-top: 10px;
+    width: fit-content;
+    width: 700px;
+}
+.aboutus-text {
+    padding: 20px;
+}
+.aboutus-text h4 {
+    color: forestgreen;
+}
+.aboutus-text h2 {
+    color: tomato;
+}

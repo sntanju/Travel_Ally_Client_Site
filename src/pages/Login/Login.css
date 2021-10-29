@@ -1,0 +1,11 @@
+.booking {
+    margin-top: 100px;
+    height: 400px;
+}
+.booking button {
+    color: white;
+    background-color: forestgreen;
+    padding: 15px;
+    border: 1px solid gray;
+    border-radius: 5px;
+}

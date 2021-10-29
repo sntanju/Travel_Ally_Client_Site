@@ -1,9 +1,12 @@
 import React from 'react';
 import { Container, Nav, Navbar } from 'react-bootstrap';
 import { NavLink} from 'react-router-dom';
+import useAuth from '../../../hooks/useAuth';
+
 import './Navbar.css';
 
 const NavMenu = () => {
+    const {users, logOut} = useAuth();
     return (
         <div >
     
@@ -15,15 +18,15 @@ const NavMenu = () => {
                         <NavLink className="bg-info link-style" to="/blog">Blog</NavLink>
                         <NavLink className="bg-info link-style" to="/aboutus">About Us</NavLink>
                         <NavLink className="bg-info link-style" to="/contactus">Contact Us</NavLink>
-                        <NavLink className="bg-info link-style" to="/register">Log In</NavLink>
                         
-                        {/* {users?.email ? 
-                        <button onClick={logOut} className="detail-btn">LogOut</button>: 
+                        
+                        {users?.email ? 
+                        <button className="logout" onClick={logOut}>LogOut</button>: 
                         <NavLink className="bg-info link-style" to="/login">Login</NavLink> 
                         }
                             <Navbar.Text>
                                 <a href = '#login'>{users?.displayName}</a>
-                            </Navbar.Text> */}
+                            </Navbar.Text>
 
                     </Nav>
                 </Container>

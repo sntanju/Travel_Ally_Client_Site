@@ -6,3 +6,10 @@
     border: 1px solid gray;
     border-radius: 5px;
 }
+.logout {
+    color: white;
+    background-color: forestgreen;
+    padding: 10px;
+    border: 1px solid gray;
+    border-radius: 5px;
+}

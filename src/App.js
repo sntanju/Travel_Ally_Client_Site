@@ -1,18 +1,22 @@
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import './App.css';
+import AuthProvider from './context/AuthProvider';
 import Aboutus from './pages/Aboutus/Aboutus';
 import Blog from './pages/Blog/Blog';
+import Booking from './pages/Booking/Booking';
 import Contactus from './pages/Contactus/Contactus';
 import Footer from './pages/Home/Footer/Footer';
 import Home from './pages/Home/Home/Home';
 import NavMenu from './pages/Home/Navbar/Navbar';
 import Login from './pages/Login/Login';
 import NotFound from './pages/NotFound/NotFound';
+import PrivateRoute from './pages/PrivateRoute/PrivateRoute';
 
 function App() {
   return (
     <div className="App">
 
+      <AuthProvider>
       <Router>
       <NavMenu></NavMenu>
         <Switch>
@@ -41,6 +45,10 @@ function App() {
             <Login></Login>
           </Route>
 
+          <PrivateRoute path="/booking/:id">
+             <Booking></Booking>
+           </PrivateRoute>
+
           <Route path="*">
             <NotFound></NotFound>
           </Route>
@@ -48,6 +56,8 @@ function App() {
         </Switch>       
             <Footer></Footer>
       </Router>
+      </AuthProvider>
+
     </div>
   );
 }
