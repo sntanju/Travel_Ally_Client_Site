@@ -9,6 +9,8 @@ import Footer from './pages/Home/Footer/Footer';
 import Home from './pages/Home/Home/Home';
 import NavMenu from './pages/Home/Navbar/Navbar';
 import Login from './pages/Login/Login';
+import ManageAllBookings from './pages/ManageALlBookings/ManageAllBookings';
+import MyBookings from './pages/MyBookings/MyBookings';
 import NotFound from './pages/NotFound/NotFound';
 import PrivateRoute from './pages/PrivateRoute/PrivateRoute';
 
@@ -47,6 +49,14 @@ function App() {
 
           <PrivateRoute path="/booking/:id">
              <Booking></Booking>
+           </PrivateRoute>
+
+          <PrivateRoute path="/mybookings">
+             <MyBookings></MyBookings>
+           </PrivateRoute>
+
+          <PrivateRoute path="/allbookings">
+             <ManageAllBookings></ManageAllBookings>
            </PrivateRoute>
 
           <Route path="*">

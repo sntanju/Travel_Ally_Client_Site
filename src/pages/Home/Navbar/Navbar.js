@@ -18,6 +18,8 @@ const NavMenu = () => {
                         <NavLink className="bg-info link-style" to="/blog">Blog</NavLink>
                         <NavLink className="bg-info link-style" to="/aboutus">About Us</NavLink>
                         <NavLink className="bg-info link-style" to="/contactus">Contact Us</NavLink>
+                        <NavLink className="bg-info link-style" to="/mybookings">My Bookings</NavLink>            
+                        <NavLink className="bg-info link-style" to="/allbookings">Manage All Bookings</NavLink>
                         
                         
                         {users?.email ? 
@@ -25,7 +27,7 @@ const NavMenu = () => {
                         <NavLink className="bg-info link-style" to="/login">Login</NavLink> 
                         }
                             <Navbar.Text>
-                                <a href = '#login'>{users?.displayName}</a>
+                                <p className="text-warning m-3">{users?.displayName}</p>
                             </Navbar.Text>
 
                     </Nav>
