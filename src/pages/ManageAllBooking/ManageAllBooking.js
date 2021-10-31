@@ -16,6 +16,7 @@ const ManageAllBooking = ({booking}) => {
     const {serviceName, address, price, phone} = booking || {};
 
         const handleDelete = id => {
+            alert("Are You Confirm To Delete?");
             const url = `https://spooky-werewolf-89746.herokuapp.com/bookings/${id}`;
             fetch(url, {
                 method: 'DELETE'
@@ -24,8 +25,8 @@ const ManageAllBooking = ({booking}) => {
             .then(data => {
                 console.log(data);
                 if(data.deletedCount){
-                    alert('deleted');
-                    const remaining = users.filter(service =>service._id !== id);
+                    alert('Deleted Successfully');
+                    const remaining = users.filter(booking => booking._id !== id);
                     setUsers(remaining);
                 }
                
@@ -40,7 +41,7 @@ const ManageAllBooking = ({booking}) => {
             <h5>{address}</h5>
             <h5><b>Price: ${price}</b></h5>
             <h5>{phone}</h5>
-            <button onClick={() => handleDelete(users._id)} >Delete</button>
+            <button onClick={ () => handleDelete(booking._id)} >Delete</button>
             
             </div>
         </div>
