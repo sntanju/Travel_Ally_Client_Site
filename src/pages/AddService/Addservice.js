@@ -1,15 +1,11 @@
 import axios from 'axios';
 import React, { useState, useEffect } from 'react';
 import { useForm } from 'react-hook-form';
-import { useParams } from 'react-router';
-import useAuth from '../../hooks/useAuth';
 import './AddService.css';
 
 const Addservice = () => {
-    const {users} = useAuth();
-    const {id} = useParams();
-    const [details, setDetails] = useState([]);
-    
+
+    const [details, setDetails] = useState([]);   
     const { register, handleSubmit, reset } = useForm();
 
     const onSubmit = data => {
@@ -34,7 +30,7 @@ const Addservice = () => {
             <h3 className="text-danger m-2 p-2">Add A Service</h3>
             <form onSubmit={handleSubmit(onSubmit)}>
                     <input {...register("img")} placeholder="Image" />
-                    <input {...register("serviceName")} placeholder="Service name" />
+                    <input {...register("name")} placeholder="Service" />
                     <input {...register("description")} placeholder="Description" />
                     <input type="number" {...register("price")} placeholder="Price" />
                         <br />
