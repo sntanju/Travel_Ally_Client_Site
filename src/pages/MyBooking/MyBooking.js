@@ -7,6 +7,7 @@ const MyBooking = ({mybooking}) => {
     const { users } = useFirebase();
   const [myBookings, setMyBookings] = useState([]);
   const [myBooking, setMyBooking] = useState([]);
+  
   useEffect(() => {
     fetch(`https://spooky-werewolf-89746.herokuapp.com/mybookings/${users?.email}`)
       .then((res) => res.json())
@@ -18,7 +19,7 @@ const MyBooking = ({mybooking}) => {
 
         const handleDelete = id => {
             alert("Are You Confirm To Delete?");
-            const url = `https://spooky-werewolf-89746.herokuapp.com/mybookings/${id}`;
+            const url = `https://spooky-werewolf-89746.herokuapp.com/bookings/${id}`;
             fetch(url, {
                 method: 'DELETE'
             })
@@ -27,8 +28,8 @@ const MyBooking = ({mybooking}) => {
                 console.log(data);
                 if(data.deletedCount){
                     alert('Deleted Successfully');
-                    const remaining = users.filter(mybooking => mybooking._id !== id);
-                    setMyBooking(remaining);
+                    const remaining = myBookings.filter(mybooking => mybooking._id !== id);
+                    setMyBookings(remaining);
                 }
                
             })

@@ -15,7 +15,7 @@ const MyBookings = () => {
 
     return (
         <div>
-            <h2 className="p-3 bg-primary text-success">My Booking</h2>
+            <h2 className="p-3 bg-primary text-warning">My Booking</h2>
            <div>
            {
                     myBookings.map(mybooking => <MyBooking
