@@ -17,9 +17,9 @@ const Contactus = () => {
 
     return (
         <div className="contact">
-            <div>
+            <div className="contact-us">
                 <br />
-                <h3> <small>{homeIcon}</small> Our Address</h3>
+                <h3> <small>{homeIcon}</small> Our Address</h3><br />
                 <p>Travel Elly Co. California, USA</p>
                 <p>Cell: {cellIcon} +543857935</p>
                 <p>Mail: {emailIcon}TAlly@abc.com</p>

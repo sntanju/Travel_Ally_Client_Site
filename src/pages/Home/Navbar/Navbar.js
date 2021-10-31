@@ -19,7 +19,8 @@ const NavMenu = () => {
                         <NavLink className="bg-info link-style" to="/aboutus">About Us</NavLink>
                         <NavLink className="bg-info link-style" to="/contactus">Contact Us</NavLink>
                         <NavLink className="bg-info link-style" to="/mybookings">My Bookings</NavLink>            
-                        <NavLink className="bg-info link-style" to="/allbookings">Manage All Bookings</NavLink>
+                        <NavLink className="bg-info link-style" to="/allbookings">All Bookings</NavLink>
+                        <NavLink className="bg-info link-style" to="/addservice">Add Service</NavLink>
                         
                         
                         {users?.email ? 
