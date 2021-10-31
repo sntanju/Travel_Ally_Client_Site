@@ -6,8 +6,7 @@ import Services from '../Services/Services';
 
 const Home = () => {
     return (
-        <div>
-            
+        <div>        
             <Header></Header>
             <Services></Services>
             <Discount></Discount>

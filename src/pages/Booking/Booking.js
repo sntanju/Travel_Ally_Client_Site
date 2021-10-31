@@ -15,17 +15,17 @@ const Booking = () => {
 
     const onSubmit = data => {
         console.log(data);
-        axios.post('http://localhost:5000/bookings', data)
+        axios.post('https://spooky-werewolf-89746.herokuapp.com/bookings', data)
         .then(res => {
             if(res.data.insertedId) {
-                alert('added sucessfully');
+                alert('Booked Sucessfully');
                 reset();
             }
         })
     }
 
     useEffect( () => {
-        fetch('http://localhost:5000/services')
+        fetch('https://spooky-werewolf-89746.herokuapp.com/services')
         .then(res => res.json())
         .then(data => setDetails(data))
     }, []);

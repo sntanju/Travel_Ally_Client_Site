@@ -1,8 +1,38 @@
-import React from 'react';
+import axios from 'axios';
+import React, { useState, useEffect} from 'react';
 import './ManageAllBooking.css';
 
 const ManageAllBooking = ({booking}) => {
+
+    const [users, setUsers] = useState([]);
+
+    useEffect(() => {
+        fetch('https://spooky-werewolf-89746.herokuapp.com/bookings')
+            .then(res => res.json())
+            .then(data => setUsers(data));
+    }, []);
+
+
     const {serviceName, address, price, phone} = booking || {};
+
+        const handleDelete = id => {
+            const url = `https://spooky-werewolf-89746.herokuapp.com/bookings/${id}`;
+            fetch(url, {
+                method: 'DELETE'
+            })
+            .then(res => res.json())
+            .then(data => {
+                console.log(data);
+                if(data.deletedCount){
+                    alert('deleted');
+                    const remaining = users.filter(service =>service._id !== id);
+                    setUsers(remaining);
+                }
+               
+            })
+        }
+
+
     return (
         <div className="all-booking">
             <div>
@@ -10,7 +40,8 @@ const ManageAllBooking = ({booking}) => {
             <h5>{address}</h5>
             <h5><b>Price: ${price}</b></h5>
             <h5>{phone}</h5>
-            <button >Delete</button>
+            <button onClick={() => handleDelete(users._id)} >Delete</button>
+            
             </div>
         </div>
     );

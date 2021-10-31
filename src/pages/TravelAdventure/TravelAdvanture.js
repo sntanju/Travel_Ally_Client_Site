@@ -1,4 +1,4 @@
-import { faAccusoft, faFacebook } from '@fortawesome/free-brands-svg-icons';
+import { faAccusoft } from '@fortawesome/free-brands-svg-icons';
 import { faFire, faMap, faMapSigns } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';

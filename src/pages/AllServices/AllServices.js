@@ -9,7 +9,7 @@ const AllServices = () => {
     const [services, setServices] = useState([]);
 
     useEffect(() => {
-        fetch('http://localhost:5000/services')
+        fetch('https://spooky-werewolf-89746.herokuapp.com/services')
         .then(res => res.json())
         .then(data => setServices(data))
     } ,[]);
@@ -24,7 +24,7 @@ const AllServices = () => {
             <div className="all-services">
             {
                     services.map(service => <AllService
-                    key = {service.id}
+                    key = {service._id}
                     service={service}
                     ></AllService>)
             }

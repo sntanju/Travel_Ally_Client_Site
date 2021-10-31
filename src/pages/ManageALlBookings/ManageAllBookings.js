@@ -7,21 +7,23 @@ const ManageAllBookings = () => {
     const [bookings, setBookings] = useState([]);
 
     useEffect(() => {
-        fetch('http://localhost:5000/bookings')
+        fetch('https://spooky-werewolf-89746.herokuapp.com/bookings')
         .then(res => res.json())
         .then(data => setBookings(data))
     } ,[bookings]);
 
 
     return (
-        <div className="bookings">
-
-            {
+        <div>
+                <h2 className="p-3 bg-success text-info">Booking of all the user</h2>
+           <div className="bookings">
+           {
                     bookings.map(booking => <ManageAllBooking
                     key = {booking._id}
                     booking={booking}
                     ></ManageAllBooking>)
             }
+           </div>
             
         </div>
     );
