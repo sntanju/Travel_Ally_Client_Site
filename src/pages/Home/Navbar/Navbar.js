@@ -15,7 +15,7 @@ const NavMenu = () => {
                     <Nav>
 
                         <NavLink className="bg-info link-style" to="/home">Home</NavLink>                       
-                        <NavLink className="bg-info link-style" to="/blog">Blog</NavLink>
+                        <NavLink className="bg-info link-style" to="/allservices">All Services</NavLink>
                         <NavLink className="bg-info link-style" to="/aboutus">About Us</NavLink>
                         <NavLink className="bg-info link-style" to="/contactus">Contact Us</NavLink>
                         <NavLink className="bg-info link-style" to="/mybookings">My Bookings</NavLink>            

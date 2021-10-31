@@ -2,7 +2,8 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import './App.css';
 import AuthProvider from './context/AuthProvider';
 import Aboutus from './pages/Aboutus/Aboutus';
-import Blog from './pages/Blog/Blog';
+import AllServices from './pages/AllServices/AllServices';
+import Blog from './pages/AllServices/Blog';
 import Booking from './pages/Booking/Booking';
 import Contactus from './pages/Contactus/Contactus';
 import Footer from './pages/Home/Footer/Footer';
@@ -31,8 +32,8 @@ function App() {
             <Home></Home>
           </Route>
 
-          <Route path="/blog">
-            <Blog></Blog>
+          <Route path="/allservices">
+            <AllServices></AllServices>
           </Route>
 
           <Route path="/aboutus">

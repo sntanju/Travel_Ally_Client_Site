@@ -1,0 +1,15 @@
+.all-booking {
+    
+    padding: 15px;
+    margin: 10px 450px;
+    border: 1px solid black;
+    color:midnightblue;
+    background-color: rgba(255, 235, 205, 0.616);
+}
+.all-booking button {
+    background-color:forestgreen;
+    color: white;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+}

@@ -15,13 +15,13 @@ const Booking = () => {
 
     const onSubmit = data => {
         console.log(data);
-        // axios.post('http://localhost:5000/services', data)
-        // .then(res => {
-        //     if(res.data.insertedId) {
-        //         alert('added sucessfully');
-        //         reset();
-        //     }
-        // })
+        axios.post('http://localhost:5000/bookings', data)
+        .then(res => {
+            if(res.data.insertedId) {
+                alert('added sucessfully');
+                reset();
+            }
+        })
     }
 
     useEffect( () => {
@@ -53,11 +53,11 @@ const Booking = () => {
                     <h4>Price: {singleDetails?.price}</h4>
                 </div>
 
-                <div>
+                <div className="input-form">
                 <form onSubmit={handleSubmit(onSubmit)}>
-                    <input {...register("firstName")} placeholder="First name" />
-                    <input {...register("lastName")} placeholder="Last name" />
+                    <input {...register("serviceName")} placeholder="Service name" />
                     <input {...register("address")} placeholder="Address" />
+                    <input type="number" {...register("price")} placeholder="Price" />
                     <input type="number" {...register("phone")} placeholder="Phone" />
                         <br />
                     <input type="submit" placeholder="PlaceOrder"/>

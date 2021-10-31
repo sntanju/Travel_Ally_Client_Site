@@ -26,3 +26,11 @@
     margin: 10px;   
     padding: 5px;
 }
+.input-form {
+    margin-left: 40px;
+    padding: 10px;
+    border: 1px solid gray;
+}
+.input-form input {
+    margin: 10px;
+}
