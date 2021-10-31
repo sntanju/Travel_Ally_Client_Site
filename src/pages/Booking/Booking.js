@@ -55,9 +55,9 @@ const Booking = () => {
 
                 <div className="input-form">
                 <form onSubmit={handleSubmit(onSubmit)}>
-                    <input {...register("serviceName")} placeholder="Service name" />
+                    <input {...register("serviceName")} placeholder=" Name" />
                     <input {...register("address")} placeholder="Address" />
-                    <input type="number" {...register("price")} placeholder="Price" />
+                    <input {...register("price")} placeholder="Service Name" />
                     <input type="number" {...register("phone")} placeholder="Phone" />
                         <br />
                     <input type="submit" placeholder="PlaceOrder"/>
